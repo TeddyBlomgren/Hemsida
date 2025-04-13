@@ -2,7 +2,10 @@ function buildMenu() {
     const links = [
       ["Hem", "index.html"],
       ["Om oss", "aboutus.html"],
-      ["Kontakt", "contactus.html"]
+      ["Kontakt", "contactus.html"],
+    ["Nyheter", "news.html"],
+    ["Referensprojekt", "projects.html"],
+    ["Tjänster", "services.html"]
     ];
   
     const menu = document.getElementById("menu");
