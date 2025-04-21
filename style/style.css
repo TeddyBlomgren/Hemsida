@@ -158,7 +158,18 @@ body {
     border-radius: 6px;
     margin-bottom: 15px;
   }
-  
-
+  .bild {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  figure {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
   
   

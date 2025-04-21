@@ -23,21 +23,21 @@ function insideMenu() {
 
 const projects = [
     {
-        title: "Scania ",
-        description: "Batterier",
-        image: "images/rör1.jpg",
+        title: "Scania Södertälje",
+        description: "Nybyggnation batteriefabrik B228",
+        image: "images/scania.batteri.ute.jpg",
         link: "projekt1.html"
     },
     {
-        title: "Stockholm",
-        description: "Installationer i Stockholm",
-        image: "images/rör1.jpg",
+        title: "Ragn-sell Bro",
+        description: "Tillbyggnad samt ombyggnad av tankgård",
+        image: "images/tankgard.webp",
         link: "projekt2.html"
     },
     {
-        title: "Astra",
-        description: "Projekt i Astra",
-        image: "images/rör2.jpg",
+        title: "Produktionsliner B228",
+        description: " Batteriefabriken Scania Södertälje",
+        image: "images/scania.batteri.inne.jpg",
         link: "projekt3.html"
     },
     {
