@@ -23,7 +23,14 @@ function buildMenu() {
     console.error("Menyn hittades inte.");
   }
 }
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("show");
+}
 
 
 
-window.onload = buildMenu;
+window.onload = function() {
+  buildMenu();
+};
+
