@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tjänster</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tjänster</title>
-  <link rel="stylesheet" href="style/style.css">
-</head>
+  <body>
+    <div class="background"></div>
+    <div class="wrapper">
+      <header>
+        <div class="topmeny">
+          <img src="images/cga.jpeg" alt="" />
+          <button class="hamburger" onclick="toggleMenu()">☰</button>
+          <ul id="menu"></ul>
+        </div>
+      </header>
 
-<body>
-  <div class="background"></div>
-  <div class="wrapper">
-    <header>
-      <div class="topmeny">
-        <img src="images/G-Pipe.jpg" alt="">
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <ul id="menu"></ul>
-      </div>
-    </header>
+      <main>
+        <div class="mainside"></div>
+        <div class="main">
+          <h5>Här kommer det stå vad ni har för tjänste osv</h5>
+        </div>
+        <div class="mainside"></div>
+      </main>
 
-    <main>
-      <div class="mainside"></div>
-      <div class="main">
+      <footer>
+        <div class="bottom">
+          <a href="https://www.id06.se/" target="_blank">
+            <img src="images/ID06.jpg" style="height: 100px" alt="ID06" />
+          </a>
 
-        <h5>Här kommer det stå vad ni har för tjänste osv </h5>
-      </div>
-      <div class="mainside"></div>
-    </main>
+          <a href="https://www.ssg.se/" target="_blank">
+            <img src="images/SSG.png" style="height: 100px" alt="SSG" />
+          </a>
 
-    <footer>
-      <div class="bottom">
-        <a href="https://www.id06.se/" target="_blank">
-          <img src="images/ID06.jpg" style="height: 100px;" alt="ID06">
-        </a>
-        
-        <a href="https://www.ssg.se/" target="_blank">
-          <img src="images/SSG.png" style="height: 100px;" alt="SSG">
-        </a>
-        
-        <a href="https://www.sakervatten.se/" target="_blank">
-          <img src="images/sakervatten.webp" style="height: 100px;" alt="Säkert Vatten">
-        </a>
-      </div>
-    </footer>
-  </div>
-  <script src="script/menu.js"></script>
-</body>
-
+          <a href="https://www.sakervatten.se/" target="_blank">
+            <img
+              src="images/sakervatten.webp"
+              style="height: 100px"
+              alt="Säkert Vatten"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="script/menu.js"></script>
+  </body>
 </html>

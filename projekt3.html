@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produktionsliner B228</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produktionsliner B228</title>
-  <link rel="stylesheet" href="style/style.css">
-</head>
+  <body>
+    <div class="background"></div>
+    <div class="wrapper">
+      <header>
+        <div class="topmeny">
+          <img src="images/cga.jpeg" alt="" />
+          <button class="hamburger" onclick="toggleMenu()">☰</button>
+          <ul id="menu"></ul>
+        </div>
+      </header>
 
-<body>
-  <div class="background"></div>
-  <div class="wrapper">
-    <header>
-      <div class="topmeny">
-        <img src="images/G-Pipe.jpg" alt="">
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <ul id="menu"></ul>
-      </div>
-    </header>
+      <main class="text">
+        <div class="mainside"></div>
+        <div class="main">
+          <figure class="figure">
+            <img
+              src="images/scania.batteri.inne.jpg"
+              alt="Info om bild"
+              class="bild"
+            />
+            <figcaption>Info om bild</figcaption>
+          </figure>
 
-    <main class="text">
-      <div class="mainside"></div>
-      <div class="main">
+          <h2>Produktionsliner B228 Batteriefabriken Scania Södertälje</h2>
+          <p>
+            Som ett resultat av en väl genomförd entreprenad (B228) Så fick
+            G-pipe Ab förtroendet att installera all produktionsutrustning i den
+            nya batteriefabriken
+          </p>
+        </div>
+        <div class="mainside"></div>
+      </main>
 
-        <figure class="figure">
-          <img src="images/scania.batteri.inne.jpg" alt="Info om bild" class="bild">
-          <figcaption>Info om bild</figcaption>
-        </figure>
+      <footer>
+        <div class="bottom">
+          <a href="https://www.id06.se/" target="_blank">
+            <img src="images/ID06.jpg" style="height: 100px" alt="ID06" />
+          </a>
 
-        <h2>Produktionsliner B228
+          <a href="https://www.ssg.se/" target="_blank">
+            <img src="images/SSG.png" style="height: 100px" alt="SSG" />
+          </a>
 
-          Batteriefabriken Scania Södertälje</h2>
-        <p>Som ett resultat av en väl genomförd entreprenad (B228)
-
-          Så fick G-pipe Ab förtroendet att installera all produktionsutrustning i den nya batteriefabriken</p>
-      </div>
-      <div class="mainside"></div>
-    </main>
-
-    <footer>
-      <div class="bottom">
-        <a href="https://www.id06.se/" target="_blank">
-          <img src="images/ID06.jpg" style="height: 100px;" alt="ID06">
-        </a>
-        
-        <a href="https://www.ssg.se/" target="_blank">
-          <img src="images/SSG.png" style="height: 100px;" alt="SSG">
-        </a>
-        
-        <a href="https://www.sakervatten.se/" target="_blank">
-          <img src="images/sakervatten.webp" style="height: 100px;" alt="Säkert Vatten">
-        </a>
-      </div>
-    </footer>
-  </div>
-  <script src="script/menu.js"></script>
-</body>
-
+          <a href="https://www.sakervatten.se/" target="_blank">
+            <img
+              src="images/sakervatten.webp"
+              style="height: 100px"
+              alt="Säkert Vatten"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="script/menu.js"></script>
+  </body>
 </html>
