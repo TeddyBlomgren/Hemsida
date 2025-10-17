@@ -2,7 +2,8 @@
   --header-h: 84px;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   font-family: sans-serif;
   overflow-x: hidden;
@@ -119,22 +120,6 @@ main {
   width: auto;
   margin: 5px;
   max-width: 150px;
-}
-
-@media (max-width: 768px) {
-  .bottom img {
-    height: 80px;
-    margin: 4px;
-    max-width: 120px;
-  }
-}
-
-@media (max-width: 480px) {
-  .bottom img {
-    height: 60px;
-    margin: 3px;
-    max-width: 100px;
-  }
 }
 
 @media (max-width: 320px) {
