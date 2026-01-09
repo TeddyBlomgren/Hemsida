@@ -1,6 +1,5 @@
 function buildMenu() {
   const links = [
-    ["Hem", "index.html"],
     ["Om oss", "aboutus.html"],
     ["Kontakt", "contactus.html"],
     ["Nyheter", "news.html"],

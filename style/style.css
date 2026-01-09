@@ -14,12 +14,6 @@ body {
   padding-top: var(--header-h);
 }
 
-.topdiv {
-  background-color: white;
-  margin: 1px;
-  padding: 2px;
-}
-
 .mainside {
   flex: 1;
 }
@@ -43,6 +37,29 @@ main {
   background-color: white;
   border-radius: 12px;
   box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.separator-lines {
+  text-align: center;
+  margin: 40px 0;
+  width: 100%;
+  display: block;
+}
+
+.separator-lines::before {
+  content: "───────────────────────────────────────────";
+  color: #ccc;
+  display: block;
+  margin: 10px 0;
+}
+
+.separator-lines::after {
+  content: "───────────────────────────────────────────";
+  color: #ddd;
+  display: block;
+  margin: 10px 0;
 }
 
 @media (max-width: 480px) {
@@ -64,69 +81,130 @@ main {
   height: var(--header-h);
   z-index: 1000;
   background-color: #f5f5f5;
-  padding: 0 20px;
+  padding: 0 60px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 .topmeny img {
-  max-height: calc(var(--header-h) - 20px);
+  max-height: calc(var(--header-h) - 10px);
   width: auto;
   display: block;
 }
+.topmeny a.logo { 
+  margin-left: 40px;
+}
 
 .hamburger {
-  min-width: 30px;
-  min-height: 30px;
+  min-width: 36px;
+  min-height: 36px;
   text-align: center;
-  font-size: 24px;
-  background: none;
-  border: none;
+  font-size: 22px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   cursor: pointer;
   display: none;
   z-index: 1100;
 }
+.hamburger:hover { background: #f1f1f1; }
 
 #menu {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 12px;
   margin: 0;
   padding: 0;
 }
 
 #menu li a {
   text-decoration: none;
-  color: black;
-  font-weight: bold;
-  background-color: lightgray;
-  padding: 6px 12px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  color: #222;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 8px 14px;
+  border-radius: 9999px; /* pill */
+  transition: background-color 0.2s, border-color 0.2s;
 }
 
 #menu li a:hover {
-  background-color: darkgray;
+  background-color: #f1f1f1;
+  border-color: #ccc;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 30px 20px;
+  margin-top: auto;
 }
 
 .bottom {
-  width: 100%;
-  padding: 10px;
-  background-color: white;
-  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.bottom img {
-  height: 100px;
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-info {
+  text-align: left;
+}
+
+.footer-info p {
+  margin: 8px 0;
+  color: #666;
+}
+
+.footer-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.partner-logos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.partner-logos img {
+  height: 50px;
   width: auto;
-  margin: 5px;
-  max-width: 150px;
 }
 
-@media (max-width: 320px) {
-  .bottom img {
-    height: 50px;
-    margin: 2px;
-    max-width: 80px;
+.copyright {
+  text-align: center;
+  margin: 20px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #999;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .footer-main {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-info {
+    text-align: center;
+  }
+  
+  .partner-logos {
+    justify-content: center;
+  }
+  
+  .partner-logos img {
+    height: 40px;
   }
 }
 
@@ -170,7 +248,7 @@ main {
   }
 }
 
-.background {
+/* .background {
   position: fixed;
   top: 0;
   left: 0;
@@ -181,23 +259,29 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -2;
-}
+} */
 
 @media (min-width: 600px) {
   header,
-  main,
-  footer {
+  main {
     display: flex;
     flex-direction: row;
+  }
+  
+  footer {
+    display: block;
   }
 }
 
 @media (max-width: 600px) {
   header,
-  main,
-  footer {
+  main {
     display: flex;
     flex-direction: column;
+  }
+  
+  footer {
+    display: block;
   }
 }
 
@@ -264,4 +348,10 @@ figure {
 .text {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.omoss-kort {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
 }

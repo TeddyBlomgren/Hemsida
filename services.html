@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tjänster</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="stylesheet" href="style/style.css" />
   </head>
 
@@ -12,7 +13,7 @@
     <div class="wrapper">
       <header>
         <div class="topmeny">
-          <img src="images/cga.jpeg" alt="" />
+<a href="index.html" class="logo"><img src="images/cga.jpeg" alt="GCA" /></a>
           <button class="hamburger" onclick="toggleMenu()">☰</button>
           <ul id="menu"></ul>
         </div>
@@ -28,21 +29,27 @@
 
       <footer>
         <div class="bottom">
-          <a href="https://www.id06.se/" target="_blank">
-            <img src="images/ID06.jpg" style="height: 100px" alt="ID06" />
-          </a>
-
-          <a href="https://www.ssg.se/" target="_blank">
-            <img src="images/SSG.png" style="height: 100px" alt="SSG" />
-          </a>
-
-          <a href="https://www.sakervatten.se/" target="_blank">
-            <img
-              src="images/sakervatten.webp"
-              style="height: 100px"
-              alt="Säkert Vatten"
-            />
-          </a>
+          <div class="footer-main">
+            <div class="footer-info">
+              <p><strong>GCA AB</strong></p>
+              <p>Industrigatan 15, 123 45 Stockholm</p>
+              <p>Org.nr: 556789-1234</p>
+              <p>E-post: <a href="mailto:info@GCA.se">info@GCA.se</a></p>
+              <p>Tel: <a href="tel:+46737341662">073-734 16 62</a></p>
+            </div>
+            
+            <div class="partner-logos">
+              <a href="https://www.id06.se/" target="_blank" rel="noopener noreferrer">
+                <img src="images/ID06.jpg" alt="ID06">
+              </a>
+              <a href="https://www.ssg.se/" target="_blank" rel="noopener noreferrer">
+                <img src="images/SSG.png" alt="SSG">
+              </a>
+              <a href="https://www.sakervatten.se/" target="_blank" rel="noopener noreferrer">
+                <img src="images/sakervatten.webp" alt="Säkert Vatten">
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

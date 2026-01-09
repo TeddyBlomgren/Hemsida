@@ -1,79 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | GCA</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="wrapper">
+      <header>
+        <div class="topmeny">
+          <a href="index.html" class="logo"
+            ><img src="images/cga.jpeg" alt="GCA"
+          /></a>
+          <button class="hamburger" onclick="toggleMenu()">☰</button>
+          <ul id="menu"></ul>
+        </div>
+      </header>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt</title>
-  <link rel="stylesheet" href="style/style.css">
-</head>
+      <main>
+        <div class="mainside"></div>
+        <div class="main">
+          <h1>Kontakt</h1>
+          <p class="text">
+            Hör av dig till oss via någon av kontaktpersonerna nedan.s
+          </p>
 
-<body>
-  <div class="background"></div>
+          <section class="omoss-kort" aria-label="Kontaktpersoner">
+            <article class="kort">
+              <img src="images/mizaru-monkey.webp" alt="Gert Hänilane" />
+              <h3>Gert Hänilane</h3>
+              <p>Projektledare</p>
+              <address>
+                <p>
+                  <strong>E-post:</strong>
+                  <a href="mailto:Gert@GCA.se">Gert@.se</a>
+                </p>
+                <p>
+                  <strong>Telefon:</strong>
+                  <a href="tel:+46737341662">+46 (0)73 734 16 62</a>
+                </p>
+              </address>
+            </article>
 
-  <div class="wrapper">
+            <article class="kort">
+              <img
+                src="images/kikazaru-wise-monkey.webp"
+                alt="Conny Blomgren"
+              />
+              <h3>Conny Blomgren</h3>
+              <p>Projektledare</p>
+              <address>
+                <p>
+                  <strong>E-post:</strong>
+                  <a href="mailto:Conny@GCA.se">Conny@.se</a>
+                </p>
+                <p>
+                  <strong>Telefon:</strong>
+                  <a href="tel:+46705500803">+46 (0)70 550 08 03</a>
+                </p>
+              </address>
+            </article>
 
-    <header>
-      <div class="topmeny">
-        <a href="index.html"><img src="images/cga.jpeg" alt="G-Pipe Logo"></a>
-        <button class="hamburger" onclick="toggleMenu()">☰</button>
-        <ul id="menu"></ul>
-      </div>
-    </header>
+            <article class="kort">
+              <img src="images/iwazaru-mokey.webp" alt="Alexander Kooi" />
+              <h3>Alexander Kooi</h3>
+              <p>Projektledare</p>
+              <address>
+                <p>
+                  <strong>E-post:</strong>
+                  <a href="mailto:Alexander@GCA.se">Alexander@.se</a>
+                </p>
+                <p>
+                  <strong>Telefon:</strong>
+                  <a href="tel:+46704570067">+46 (0)70 457 00 67</a>
+                </p>
+              </address>
+            </article>
+          </section>
+        </div>
+        <div class="mainside"></div>
+      </main>
 
-    <main>
-      <div class="mainside"></div>
-      <div class="main">
-        <h5>Ruta för att fylla i kontakt info </h5>
-        <section class="omoss-kort">
-          <div class="kort">
-            <img src="images/mizaru-monkey.webp" alt="Gert Hänilane">
-            <h3>Gert Hänilane</h3>
-            <p>Vd G-Pipe AB</p>
-            <p>Email: <a href="mailto:Gert@gpipe.se">Gert@g-pipe.se</a>
-            <p>Phone:</strong> <a href="tel:+46737341662">+46 (0)73 734 16 62</a></p>
+      <footer>
+        <div class="bottom">
+          <div class="footer-main">
+            <div class="footer-info">
+              <p><strong>GCA AB</strong></p>
+              <p>Industrigatan 15, 123 45 Södertälje</p>
+              <p>Org.nr: 556789-1234</p>
+              <p>E-post: <a href="mailto:info@gca.se">info@gca.se</a></p>
+              <p>Tel: <a href="tel:+46737341662">073-734 16 62</a></p>
+            </div>
+
+            <div class="partner-logos">
+              <a
+                href="https://www.id06.se/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="images/ID06.jpg" alt="ID06" />
+              </a>
+              <a
+                href="https://www.ssg.se/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="images/SSG.png" alt="SSG" />
+              </a>
+              <a
+                href="https://www.sakervatten.se/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="images/sakervatten.webp" alt="Säkert Vatten" />
+              </a>
+            </div>
           </div>
+        </div>
+      </footer>
+    </div>
 
-          <div class="kort">
-            <img src="images/kikazaru-wise-monkey.webp" alt="Johan">
-            <h3>Conny Blomgren</h3>
-            <p>Projektledare G-Pipe AB</p>
-            <p>Email: </strong><a href="mailto:Conny@gpipe.se">Conny@g-pipe.se</a>
-            <p>Phone:</strong> <a href="tel:+46705500803">+46 (0)70 550 08 03</a></p>
-
-          </div>
-
-          <div class="kort">
-            <img src="images/iwazaru-mokey.webp" alt="Linda">
-            <h3>Alexander Kooi</h3>
-            <p>Projektledare G-Pipe AB</p>
-            <p>Email: <a href="mailto:Alexander@gpipe.se">Alexander@g-pipe.se</a>
-            <p>Phone:</strong> <a href="tel:+46704570067">+46 (0)70 457 00 67</a></p>
-          </div>
-        </section>
-      </div>
-      <div class="mainside"></div>
-    </main>
-
-    <footer>
-      <div class="bottom">
-        <a href="https://www.id06.se/" target="_blank">
-          <img src="images/ID06.jpg" style="height: 100px;" alt="ID06">
-        </a>
-        
-        <a href="https://www.ssg.se/" target="_blank">
-          <img src="images/SSG.png" style="height: 100px;" alt="SSG">
-        </a>
-        
-        <a href="https://www.sakervatten.se/" target="_blank">
-          <img src="images/sakervatten.webp" style="height: 100px;" alt="Säkert Vatten">
-        </a>
-      </div>
-    </footer>
-
-  </div>
-
-  <script src="script/menu.js"></script>
-</body>
-
+    <script src="script/menu.js"></script>
+  </body>
 </html>
