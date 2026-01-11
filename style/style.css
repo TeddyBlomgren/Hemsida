@@ -41,32 +41,27 @@ main {
   position: relative;
 }
 
-.separator-lines {
-  text-align: center;
-  margin: 40px 0;
-  width: 100%;
-  display: block;
-}
-
-.separator-lines::before {
-  content: "───────────────────────────────────────────";
-  color: #ccc;
-  display: block;
-  margin: 10px 0;
-}
-
-.separator-lines::after {
-  content: "───────────────────────────────────────────";
-  color: #ddd;
-  display: block;
-  margin: 10px 0;
-}
-
 @media (max-width: 480px) {
   .main {
     margin: 15px 10px 30px;
     padding: 20px 15px;
     border-radius: 8px;
+  }
+  
+  .topmeny {
+    padding: 0 15px;
+  }
+  
+  .topmeny a.logo {
+    margin-left: 0;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
   }
 }
 
@@ -180,15 +175,6 @@ footer {
   width: auto;
 }
 
-.copyright {
-  text-align: center;
-  margin: 20px 0 0;
-  padding-top: 20px;
-  border-top: 1px solid #ddd;
-  color: #999;
-  font-size: 14px;
-}
-
 @media (max-width: 600px) {
   .footer-main {
     flex-direction: column;
@@ -248,18 +234,6 @@ footer {
   }
 }
 
-/* .background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/rör2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -2;
-} */
 
 @media (min-width: 600px) {
   header,
@@ -288,12 +262,6 @@ footer {
 .omoss-info {
   text-align: center;
   margin-bottom: 40px;
-}
-
-.omoss-kort {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 .kort {
@@ -354,4 +322,59 @@ figure {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
+}
+
+.contact-features {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.contact-features p {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: start;
+  gap: 10px;
+  margin: 12px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.services-features {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0;
+  text-align: left;
+}
+
+.services-features p {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.services-features p span:first-child {
+  flex-shrink: 0;
+  width: 25px;
+  text-align: center;
+}
+
+.services-features p span:last-child {
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .contact-features,
+  .services-features {
+    padding: 0 15px;
+    margin: 20px auto;
+  }
+  
+  .contact-features p,
+  .services-features p {
+    font-size: 15px;
+    gap: 8px;
+  }
 }
