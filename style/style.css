@@ -318,6 +318,26 @@ figure {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.index-logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  display: block;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  .index-logo {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .index-logo {
+    max-height: 200px;
+  }
+}
+
 .omoss-kort {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
