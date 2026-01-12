@@ -75,7 +75,7 @@ main {
   right: 0;
   height: var(--header-h);
   z-index: 1000;
-  background-color: #080808;
+  background-color: #080808 !important;
   padding: 0 60px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -128,7 +128,7 @@ main {
 }
 
 footer {
-  background-color: #000000;
+  background-color: #000000 !important;
   padding: 30px 20px;
   margin-top: auto;
 }
