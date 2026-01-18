@@ -41,8 +41,8 @@ const projects = [
     link: "projekt3.html",
   },
   {
-    title: "Södertälje",
-    description: "Installationer i Södertälje",
+    title: "Övriga installationer",
+    description: "",
     image: "images/icon/black_logo_transparent_background.png",
     link: "projekt4.html",
   },
