@@ -47,19 +47,19 @@ main {
     padding: 20px 15px;
     border-radius: 8px;
   }
-  
+
   .topmeny {
     padding: 0 15px;
   }
-  
+
   .topmeny a.logo {
     margin-left: 0;
   }
-  
+
   h1 {
     font-size: 1.5rem;
   }
-  
+
   h2 {
     font-size: 1.25rem;
   }
@@ -85,7 +85,7 @@ main {
   width: auto;
   display: block;
 }
-.topmeny a.logo { 
+.topmeny a.logo {
   margin-left: 40px;
 }
 
@@ -101,7 +101,9 @@ main {
   display: none;
   z-index: 1100;
 }
-.hamburger:hover { background: #f1f1f1; }
+.hamburger:hover {
+  background: #f1f1f1;
+}
 
 #menu {
   list-style: none;
@@ -180,21 +182,21 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .footer-info {
     text-align: center;
   }
-  
+
   .partner-logos {
     justify-content: center;
   }
-  
+
   .partner-logos img {
     height: 40px;
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 850px) {
   .hamburger {
     display: block;
   }
@@ -234,14 +236,13 @@ footer {
   }
 }
 
-
 @media (min-width: 600px) {
   header,
   main {
     display: flex;
     flex-direction: row;
   }
-  
+
   footer {
     display: block;
   }
@@ -253,7 +254,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  
+
   footer {
     display: block;
   }
@@ -391,7 +392,7 @@ figure {
     padding: 0 15px;
     margin: 20px auto;
   }
-  
+
   .contact-features p,
   .services-features p {
     font-size: 15px;

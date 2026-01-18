@@ -43,7 +43,7 @@ const projects = [
   {
     title: "Södertälje",
     description: "Installationer i Södertälje",
-    image: "images/rör2.jpg",
+    image: "images/icon/black_logo_transparent_background.png",
     link: "projekt4.html",
   },
   {
