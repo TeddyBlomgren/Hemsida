@@ -1,26 +1,3 @@
-function insideMenu() {
-  const links = [
-    ["Rör1", "projekt1"],
-    ["Rör2", "projekt2"],
-    ["Rör3", "projekt3"],
-    ["Rör4", "projekt4"],
-  ];
-  const menu = document.getElementById("insidemenu");
-
-  if (menu) {
-    for (let i = 0; i < links.length; i++) {
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-      a.href = links[i][1];
-      a.textContent = links[i][0];
-      li.appendChild(a);
-      menu.appendChild(li);
-    }
-  } else {
-    console.error("Menyn hittades inte.");
-  }
-}
-
 const projects = [
   {
     title: "Scania Södertälje",
@@ -29,7 +6,7 @@ const projects = [
     link: "projekt1.html",
   },
   {
-    title: "Ragn-sell Bro",
+    title: "Ragn-Sells Bro",
     description: "Tillbyggnad samt ombyggnad av tankgård",
     image: "images/tankgard.webp",
     link: "projekt2.html",
@@ -47,13 +24,13 @@ const projects = [
     link: "projekt4.html",
   },
   {
-    title: "Astra Zeneca",
+    title: "AstraZeneca",
     description: "Rörinstallation av värmeåtervinning ",
     image: "images/Astra.jpg",
     link: "projekt5.html",
   },
   {
-    title: "Astra Zeneca",
+    title: "AstraZeneca",
     description: "Rörinstallationer för nya kylmaskiner",
     image: "images/Astra.jpg",
     link: "projekt6.html",
@@ -62,7 +39,6 @@ const projects = [
 
 window.onload = function () {
   buildMenu();
-  insideMenu();
 
   const container = document.getElementById("projects-container");
   projects.forEach((project) => {
