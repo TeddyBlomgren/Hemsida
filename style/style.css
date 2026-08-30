@@ -265,34 +265,6 @@ footer {
   margin-bottom: 40px;
 }
 
-.kort {
-  background-color: white;
-  border-radius: 12px;
-  padding: 30px 25px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  width: 100%;
-  max-width: 350px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-@media (max-width: 480px) {
-  .kort {
-    padding: 20px 15px;
-    border-radius: 8px;
-  }
-}
-
-.kort img {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 15px;
-}
-
 .bild {
   width: 100%;
   height: auto;
@@ -339,26 +311,41 @@ figure {
   }
 }
 
-.omoss-kort {
+.contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
-}
-
-.contact-features {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-
-.contact-features p {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  align-items: start;
-  gap: 10px;
-  margin: 12px 0;
-  font-size: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
   text-align: left;
+  margin-top: 30px;
+}
+
+.contact-block p {
+  margin: 6px 0;
+}
+
+.contact-block address {
+  font-style: normal;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.contact-block .block-title {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.contact-block .block-subtitle {
+  color: #555;
+  margin-bottom: 14px;
+}
+
+.contact-block a {
+  color: #111;
+  text-decoration: underline;
+}
+
+.contact-block a:hover {
+  color: #666;
 }
 
 .services-features {
@@ -387,13 +374,12 @@ figure {
 }
 
 @media (max-width: 600px) {
-  .contact-features,
+  .contact-grid,
   .services-features {
     padding: 0 15px;
     margin: 20px auto;
   }
 
-  .contact-features p,
   .services-features p {
     font-size: 15px;
     gap: 8px;
